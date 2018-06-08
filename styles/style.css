@@ -1,52 +1,47 @@
-@font-face { /*Ajout de la police*/
-    font-family: 'Starjedi';
-    src: url('fonts/Starjedi.ttf');
-}
 body{ /*Mise en place de l'image de fond, de la police et de la couleur des texte*/
 	background:url("../assets/fond.jpg") fixed no-repeat top right;
-	font-family:Starjedi;
 	color:white;
 }
-h1{ /*Taille des titre de niveau 1*/
-	font-size:3em;
-}
-h3{ /*Taille des titre de niveau 2, leur couleur et leur forme*/
-	color:rgb(74, 142, 165);
-	font-size:2em;
-	font-weight:bold;
-}
 
-.entete{ /*Taille et allignement de la class entete*/
-	line-height:3em;
+.header_flex{
+	display:flex;
+	justify-content:space-between
+}
+.lisere{
+	float:left;
+	width:10%;
+	height:600px;
+	border-radius:1em;
+	margin-right:2em;
+	background-color: white;
+}
+.entete{
+	width:100%;
 	text-align:center;
 }
-
-#image{ /*Placement de l'image en haut a droite*/
-	float:right
+h3{
+	text-align:center;
 }
-
-#xp{ /*Met le reste de la page sous le float*/
-	clear:both;
+.section_flex{
+	display:flex;
+	justify-content:space-between
 }
-
-.link{ /*Enleve la decoration du lien et change la couleur part default*/
-	text-decoration:none;
-	color:rgb(66, 140, 244);
+#experiences{
+	width:50%;
 }
-
-.link:hover{ /*Change ma couleut au survol du lien*/
-	color:rgb(161, 192, 237);
+#competences{
+	width:30%;	
 }
-
-.survol{/*Ajoute une bordure autout des éléments de la classe .survol (avec des marges interrieur a gauche et en dessous et exterrieur)*/
+#formations{
+	width:20%;
+}
+.survol{
 	border:3px solid white;
+	border-radius: 1em;
 	margin:1em;
-	padding-left:2em;
-	padding-bottom:1em;
-	
+	padding:1em;
 }
-
-.survol:hover{ /*Change la bordure et ajoute un ombre au survol de chaque éléments de la classe .survol */
-	border:3px inset white;
-	box-shadow: 3px 3px 3px white;
+.survol:hover{
+	color:black;
+	background-color:rgba(255,255,255,0.6);
 }
