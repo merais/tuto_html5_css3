@@ -24,7 +24,7 @@ h3{
 }
 .section_flex{
 	display:flex;
-	justify-content:space-between
+	justify-content:space-between;
 }
 #experiences{
 	width:50%;
@@ -44,4 +44,27 @@ h3{
 .survol:hover{
 	color:black;
 	background-color:rgba(255,255,255,0.6);
+}
+
+@media screen and (max-width: 1280px){
+	.section_flex{
+		display:flex;
+		flex-direction: column;	
+	}
+	.lisere{
+		display:none;
+	}
+	.survol{
+		margin:auto;
+		margin-bottom:1em;
+	}
+	#experiences{
+		width:90%;
+	}
+	#competences{
+		width:90%;
+	}
+	#formations{
+		width:90%;
+	}
 }
