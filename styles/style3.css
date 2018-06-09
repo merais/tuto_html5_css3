@@ -1,0 +1,47 @@
+body{ /*Mise en place de l'image de fond, de la police et de la couleur des texte*/
+	background:url("../assets/fond.jpg") fixed no-repeat top right;
+	color:white;
+}
+
+.header_flex{
+	display:flex;
+	justify-content:space-between
+}
+.lisere{
+	float:left;
+	width:10%;
+	height:600px;
+	border-radius:1em;
+	margin-right:2em;
+	background-color: white;
+}
+.entete{
+	width:100%;
+	text-align:center;
+}
+h3{
+	text-align:center;
+}
+.section_flex{
+	display:flex;
+	justify-content:space-between
+}
+#experiences{
+	width:50%;
+}
+#competences{
+	width:30%;	
+}
+#formations{
+	width:20%;
+}
+.survol{
+	border:3px solid white;
+	border-radius: 1em;
+	margin:1em;
+	padding:1em;
+}
+.survol:hover{
+	color:black;
+	background-color:rgba(255,255,255,0.6);
+}
